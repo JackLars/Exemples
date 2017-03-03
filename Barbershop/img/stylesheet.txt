@@ -1,0 +1,65 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite--icon-login1 {
+    width: 18px;
+    height: 16px;
+    background-position: -5px -5px;
+}
+
+.sprite-Layer-29-copy {
+    width: 12px;
+    height: 12px;
+    background-position: -33px -5px;
+}
+
+.sprite-Locked-2 {
+    width: 15px;
+    height: 17px;
+    background-position: -55px -5px;
+}
+
+.sprite-User-copy-2 {
+    width: 15px;
+    height: 15px;
+    background-position: -80px -5px;
+}
+
+.sprite-__ {
+    width: 21px;
+    height: 21px;
+    background-position: -105px -5px;
+}
+
+.sprite-__-copy {
+    width: 21px;
+    height: 21px;
+    background-position: -136px -5px;
+}
+
+.sprite-f {
+    width: 12px;
+    height: 22px;
+    background-position: -167px -5px;
+}
+
+.sprite-f-copy {
+    width: 12px;
+    height: 22px;
+    background-position: -189px -5px;
+}
+
+.sprite-v {
+    width: 25px;
+    height: 16px;
+    background-position: -211px -5px;
+}
+
+.sprite-v-copy {
+    width: 25px;
+    height: 16px;
+    background-position: -246px -5px;
+}

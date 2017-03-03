@@ -1,0 +1,139 @@
+/*Системное оформление*/
+
+
+
+.gl0, .gl1, gl2, gl3 {
+    position: relative;
+}
+
+.gl0:before, 
+.gl1:before, 
+.gl2:before,
+.gl3:before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 0;
+    height: 20px;
+    padding: 2px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: "Courier New", monotype;
+    white-space: nowrap;
+}
+
+.gl0 {
+    border: 2px solid blue;
+    background: rgba(0, 0, 255, .1);
+}
+
+.gl0:before {
+    color: #fff;
+    background: rgba(0, 0, 255, .9);
+}
+
+.gl1 {
+    border: 2px solid green;
+    background: rgba(0, 128, 0, .1);
+}
+
+.gl1:before {
+    color: #fff;
+    background: rgba(0, 128, 0, .9);
+}
+
+.gl2 {
+    border: 2px solid rgb(255, 45, 82);
+    background: rgba(255, 45, 82, .1);
+}
+
+.gl2:before {
+    color: #fff;
+    background: rgba(255, 45, 82, .9);
+}
+
+.gl3 {
+    border: 2px solid rgb(234, 255, 45);
+    background: rgba(234, 255, 45, .1);
+}
+
+.gl3 {
+    color: #fff;
+    background: rgba(234, 255, 45, .8);
+}
+
+.main-header:before {
+    content: '.main-header';
+}
+
+.main-header *:before {
+    top: auto;
+    bottom: -25px;
+}
+
+.container:before {
+    content: '.container';
+}
+
+.main-navigation:before {
+    content: '.main-navigation';
+    left: auto;
+    right: -2px;
+}
+
+.user-block:before {
+    content: '.user-block';
+}
+
+.main-footer:before {
+    content: '.main-footer';
+}
+
+.logo:before {
+    content: '.logo';
+}
+
+.features-row:before {
+    content: '.features-row';
+    top: -25px;
+}
+
+.features-item:before {
+    content: '.features-item';
+}
+
+.index-content:before {
+    left: auto;
+    right: 0;
+    content: '.index-content';
+}
+
+.content-column-left:before {
+    content: '.content-column-left';
+}
+
+.content-column-right:before {
+    content: '.content-column-right';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
