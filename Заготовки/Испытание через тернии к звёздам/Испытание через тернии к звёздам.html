@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+       <title>Испытание: через тернии к звёздам</title>
+       <meta charset="utf-8">
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Page-Header-->
+		<header class="page-header">
+			<div class="logo">
+                <img src="logo.svg" width="90" height="90">
+            </div><nav>Форма отзыва</nav>
+		</header>
+        
+		<!--Main-->
+		<main>
+            <form action="/echo" method="post" oninput="ratingval.value=rating.value">
+				
+				<!--Личные данные-->
+                <fieldset>
+                    <legend>Личные данные</legend>
+                    <div class="half-width">
+                        <label for="id">ID отзыва</label>
+                        <input type="text" id="id" disabled value="12345">
+                        </input>
+                    </div>
+                    <div class="half-width">
+                        <label for="name">Имя путешественника</label>
+                        <input type="text" id="name" value="Кекс"></input>
+                        </div>
+                </fieldset>	
+				
+				<!--Отзыв о поездке-->
+		        <fieldset>
+					<legend>Отзыв о поездке</legend>
+					<div class="half-width">
+						<label for="country">Страна визита</label>
+						<input type="search" id="country" value="Норвегия"></input>
+					</div>
+					
+					<div class="half-width">
+						<label for="city">Город</label>
+						<select id="city">
+							<option>Осло</option>
+						</select>
+					</div>
+			    
+					<div class="half-width">
+						<label for="rating">Оценка поездки</label>
+						0 <input type="range" min="0" max="10" step="1" id="rating" name="rating" value="10"> 10
+					</div>
+    			
+					<div class="half-width output-area">
+						<output name="ratingval">10</output>
+					</div>
+    			
+					<label for="review">Текст отзыва</label>
+					<textarea id="review" rows="5">Это было просто мяу!</textarea>
+    			</fieldset>
+    			
+				<!--Оценка отеля-->
+				<fieldset>
+					<legend>Оценка отеля</legend>
+					<div class="half-width">
+						<label for="hotel">Название отеля</label>
+						<input type="text" id="hotel" placeholder="Название по-английски"></input>
+					</div>
+                
+					<div class="half-width">
+						<label for="arrival_date">Дата въезда</label>
+						<input type="text" id="arrival_date" placeholder="В формате дд-мм-гггг"></input>
+					</div>
+					
+					<div class="one-third-width">
+						<label for="color">Цвет кроватки</label>
+						<input type="color" id="one-third-width"></input>
+					</div>
+			    
+					<div class="two-third-width">
+						<label for="dish_rating">Оценка обедов</label> 
+						<select id="dish_rating">
+							<option>Подушечки оближешь</option>
+						</select>
+					</div>
+					
+					<label for="fish">Самая вкусная рыба</label>
+					<select id="fish" multiple size="6">
+						<option selected>Норвежский лосось</option>
+						<option>Зубатка</option>
+						<option selected>Морской окунь</option>
+						<option>Карась</option>
+						<option>Зеркальный карп</option>
+					</select>
+			    </fieldset>
+        		
+				<div class="buttons">
+        		    <input type="submit" value="Оценить">
+        		    <input type="reset" value="Сбросить">
+    			</div>
+    			
+		    </form> 
+        </main>
+        
+		<!--Page-Footer-->
+		<footer class="page-footer">
+			<section class="info">
+                <img src="keks.jpg" width="50" alt="keks">
+                Кекс, keks@htmlacademy.ru
+            </section>
+            <section class="copyright">
+                © 2008—2014 Cat Energy
+            </section>
+		</footer>
+    </body>
+</html>
